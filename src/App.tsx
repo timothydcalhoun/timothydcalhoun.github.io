@@ -8,7 +8,7 @@ import {ThemeType} from "./models/Theme.ts";
 import {useEffect, useLayoutEffect} from "react";
 import {StyledEngineProvider} from "@mui/material";
 
-export function updateStyles(themeType: ThemeType) {
+function updateStyles(themeType: ThemeType) {
     document.getElementById('theme-link')!
         .setAttribute('href', `src/models/Themes/${themeType.toLowerCase()}.css`);
 }
@@ -21,6 +21,7 @@ function App() {
     //  triggers whenever the theme changes and replaces the active stylesheet
     //  containing the global variables for each theme
     useLayoutEffect(() => {
+        console.log("got here")
         const element = document.getElementById('theme-link')
         if (element) {
             element.setAttribute('href', appTheme.styleSheet);
