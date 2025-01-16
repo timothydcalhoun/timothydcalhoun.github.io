@@ -1,0 +1,42 @@
+.select-container {
+    /*background-image: url("/toolbar-icon.svg");*/
+    /*border-style: none;*/
+    border-top-left-radius: 4px;
+    border-top-right-radius: 15% 50%;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: var(--primaryColor);
+    border: none;
+    padding: 4px;
+    color: black;
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.theme-selection {
+    background-color: transparent;
+    border: none;
+}
+
+.select-container:hover {
+    box-shadow: 0 0 10px -2px white, 0 0 5px 0 white inset;
+    transition: box-shadow 0.1s ease-in;
+}
+
+.theme-selection:focus-visible {
+    outline: none;
+}
+
+.select-icon {
+    color: black;
+}
+
+option {
+    background-color: green;
+    border: none;
+}

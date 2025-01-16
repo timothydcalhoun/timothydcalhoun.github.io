@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox=" -2 -2 1604 904" preserveAspectRatio="false">
+  <path
+          d="M 0 40
+          a 10 10 0 0 1 10 -10
+          l 770 0
+          l 40 -30
+          l 770 0
+          a 10 10 0 0 1 10 10
+          l 0 880
+          a 10 10 0 0 1 -10 10
+          l -1580 0
+          a 10 10 0 0 1 -10 -10
+          l 0 -850"
+          fill="#001F25AA" stroke="#00bfff" stroke-width="2px"/>
+</svg>

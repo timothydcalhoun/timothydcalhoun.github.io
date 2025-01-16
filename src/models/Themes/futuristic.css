@@ -1,0 +1,23 @@
+:root {
+    /* Font Styles */
+    --fontRegular: 'Orbitron-Regular';
+    --fontMedium: 'Orbitron-Medium';
+    --fontBold: 'Orbitron-Bold';
+    /* Images */
+    --backgroundImage: url("src/assets/futuristicBG.jpg");
+    --cardBackgroundImage: url("/content-card.svg");
+    --cardBackgroundNoImage: url("/content-card-noimage.svg");
+    --cardContentImage: url("/futuristic-image.png");
+    --toolbarIcon: url("/toolbar-icon.svg");
+    --toolbarSpacer: url("/toolbar-spacer.svg");
+    /* Colors */
+    --primaryTextColor: #00bfff;
+    --secondaryTextColor: #c7f8f8;
+    --primaryColor: #00bfff;
+    /*--secondaryColor: #00bfff;*/
+    --navDrawerBgColor: rgba(0, 200, 255, 0.15);
+    /* SVG / Effects */
+    --navDrawerSvgFilter: drop-shadow(0 0 2px white);
+    --navDrawerTextShadow: "0 0 2px white";
+    --buttonPath: path("M 0 2 a 2 2 0 0 1 2 -2 l 32 0 a 2 2 0 0 1 2 2 l 0 32 a 2 2 0 0 1 -2 2l -32 0 a 2 2 0 0 1 -2 -2 l 0 -32")
+}

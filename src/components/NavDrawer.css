@@ -1,0 +1,64 @@
+.nav-drawer {
+    width: 50px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 0.2s ease-in;
+    background-color: var(--navDrawerBgColor);
+    /*background-color: whitesmoke;*/
+    z-index: 1;
+}
+
+.nav-drawer.open {
+    width: 150px;
+}
+
+.nav-drawer svg:hover {
+    cursor: pointer;
+    filter: var(--navDrawerSvgFilter);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: calc(var(--titleHeight) - 6px);
+    margin-right: 13px;
+}
+
+/* The hamburger menu icon */
+.nav-drawer svg {
+    fill: var(--primaryColor)
+}
+
+.menu-items {
+    margin: 50px 0 0;
+}
+
+.menu-items > * {
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    display: flex;
+    text-wrap: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.menu-item-icon {
+    width: 50px;
+}
+
+.menu-item-text {
+    width: 80px;
+    padding-left: 20px;
+    overflow: hidden;
+    text-align: start;
+    color: var(--primaryTextColor);
+}
+
+.menu-item-text:hover {
+    text-shadow: var(--navDrawerTextShadow);
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox=" -1 -1 38 38">
+  <path
+          d="M 0 2
+          a 2 2 0 0 1 2 -2
+          l 32 0
+          a 2 2 0 0 1 2 2
+          l 0 32
+          a 2 2 0 0 1 -2 2
+          l -32 0
+          a 2 2 0 0 1 -2 -2
+          l 0 -32"
+          fill="#00C8FF26" stroke="#00bfff" stroke-width="2px"/>
+</svg>

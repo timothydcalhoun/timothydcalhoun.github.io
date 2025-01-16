@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Orbitron-Regular';
+    src: url('./Orbitron/Orbitron-Regular.ttf');
+}
+@font-face {
+    font-family: 'Orbitron-Medium';
+    src: url('./Orbitron/Orbitron-Medium.ttf');
+}
+@font-face {
+    font-family: 'Orbitron-Bold';
+    src: url('./Orbitron/Orbitron-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Tangerine-Regular';
+    src: url('./Tangerine/Tangerine-Regular.ttf');
+}
+@font-face {
+    font-family: 'Tangerine-Bold';
+    src: url('./Tangerine/Tangerine-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Gaegu-Regular';
+    src: url('./Gaegu/Gaegu-Regular.ttf');
+}
+@font-face {
+    font-family: 'Gaegu-Light';
+    src: url('./Gaegu/Gaegu-Light.ttf');
+}
+@font-face {
+    font-family: 'Gaegu-Bold';
+    src: url('./Gaegu/Gaegu-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'SpectralSC-Regular';
+    src: url('./SpectralSC/SpectralSC-Regular.ttf');
+}
+@font-face {
+    font-family: 'SpectralSC-Medium';
+    src: url('./SpectralSC/SpectralSC-Medium.ttf');
+}
+@font-face {
+    font-family: 'SpectralSC-Bold';
+    src: url('./SpectralSC/SpectralSC-Bold.ttf');
+}
