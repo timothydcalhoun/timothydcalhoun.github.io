@@ -26,15 +26,15 @@ const Card = () => {
         )
     }
 
-    if (windowSize === "small" || windowSize === "medium") {
+    if (windowSize === "small" || windowSize === "medium" || windowSize === "xs") {
         return (
-            <div id={"card-no-image"} className={"card-no-image"}>
+            <div id={"card-no-image"} className={`card-no-image ${windowSize}`}>
                 <CardText/>
             </div>
         )
     } else {
         return (
-            <div id={"card"} className={`card ${windowSize}`}>
+            <div id={"card"} className={"card"}>
                 <div className={"card-left"}>
                     <img className={"card-img"} alt={"futuristic"} src={`${imgUrl}`} />
                 </div>

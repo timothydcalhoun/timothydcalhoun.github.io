@@ -68,19 +68,32 @@ button:focus-visible {
   }
 }
 
-@media screen and (max-width: 600px) {
-  h2 {
-    font-size: 1em;
-  }
-  p {
-    font-size: 0.6em;
-  }
-}
 @media screen and (max-width: 900px) {
   h2 {
     font-size: 1.2em;
   }
   p {
-    font-size: .8em;
+    font-size: 0.8em;
+  }
+}
+
+/*@media screen and (max-width: 600px) {*/
+/*  h2 {*/
+/*    font-size: 1em;*/
+/*  }*/
+/*  p {*/
+/*    font-size: 0.6em;*/
+/*  }*/
+/*}*/
+
+@media screen and (max-width: 400px) {
+  h3 {
+    margin: 8px;
+  }
+  h2 {
+    font-size: 0.8em;
+  }
+  p {
+    font-size: 0.6em;
   }
 }

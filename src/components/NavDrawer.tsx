@@ -29,13 +29,13 @@ const NavDrawer = () => {
                 <div className={"menu-item"}>
                     <Build className={"menu-item-icon"} sx={{width: "50px"}}/>
                     <a className={"menu-item-text"}>
-                        Item 1
+                        Fake Link
                     </a>
                 </div>
                 <div className={"menu-item"}>
                     <TodayOutlined className={"menu-item-icon"} sx={{width: "50px"}}/>
                     <a className={"menu-item-text"}>
-                        Item 2
+                        Fake Link
                     </a>
                 </div>
             </div>

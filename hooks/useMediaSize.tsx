@@ -1,9 +1,11 @@
 import {useEffect, useState} from "react";
 
-export type WindowSize = "small" | "medium" | "large" | "extra-large"
+export type WindowSize = "xs" | "small" | "medium" | "large" | "extra-large"
 
 function getWindowSize(width: number): WindowSize {
-    if (width < 600) {
+    if (width < 400) {
+        return "xs"
+    } else if (width < 600) {
         return "small"
     } else if (width < 900) {
         return "medium"
