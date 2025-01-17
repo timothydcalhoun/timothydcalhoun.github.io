@@ -17,6 +17,7 @@ function App() {
 
     // const appTheme = useAppSelector(state => state.theme).theme
 
+    // TODO: Dynamic Theme Styling
     // useLayoutEffect runs synchronously after the DOM has been updated but before the browser paints
     //  triggers whenever the theme changes and replaces the active stylesheet
     //  containing the global variables for each theme

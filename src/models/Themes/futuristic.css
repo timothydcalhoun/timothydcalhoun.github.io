@@ -4,12 +4,12 @@
     --fontMedium: 'Orbitron-Medium';
     --fontBold: 'Orbitron-Bold';
     /* Images */
-    --backgroundImage: url("src/assets/futuristicBG.jpg");
-    --cardBackgroundImage: url("src/assets/content-card.svg");
-    --cardBackgroundNoImage: url("src/assets/content-card-noimage.svg");
-    --cardContentImage: url("src/assets/futuristic-image.png");
-    --toolbarIcon: url("src/assets/toolbar-icon.svg");
-    --toolbarSpacer: url("src/assets/toolbar-spacer.svg");
+    --backgroundImage: url("/src/assets/futuristicBG.jpg");
+    --cardBackgroundImage: url("/src/assets/content-card.svg");
+    --cardBackgroundNoImage: url("/src/assets/content-card-noimage.svg");
+    --cardContentImage: url("/src/assets/futuristic-image.png");
+    --toolbarIcon: url("/src/assets/toolbar-icon.svg");
+    --toolbarSpacer: url("/src/assets/toolbar-spacer.svg");
     /* Colors */
     --primaryTextColor: #00bfff;
     --secondaryTextColor: #c7f8f8;

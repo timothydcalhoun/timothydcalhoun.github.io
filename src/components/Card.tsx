@@ -1,6 +1,6 @@
 import ThemeSelect from "./ThemeSelect.tsx";
 import useMediaSize from "../../hooks/useMediaSize.tsx";
-import imgUrl from "../assets/futuristic-image.png"
+import imgUrl from "/src/assets/futuristic-image.png"
 
 const Card = () => {
 
