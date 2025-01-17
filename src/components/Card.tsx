@@ -1,5 +1,6 @@
 import ThemeSelect from "./ThemeSelect.tsx";
 import useMediaSize from "../../hooks/useMediaSize.tsx";
+import imgUrl from "../assets/futuristic-image.png"
 
 const Card = () => {
 
@@ -35,7 +36,7 @@ const Card = () => {
         return (
             <div id={"card"} className={`card ${windowSize}`}>
                 <div className={"card-left"}>
-                    <img className={"card-img"} alt={"futuristic"} src={"/futuristic-image.png"}/>
+                    <img className={"card-img"} alt={"futuristic"} src={`${imgUrl}`} />
                 </div>
                 <CardText/>
             </div>

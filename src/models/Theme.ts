@@ -19,7 +19,7 @@ export interface Theme {
 
 export const FuturisticTheme: Theme = {
     type: ThemeType.Futuristic,
-    styleSheet: "src/models/Themes/futuristic.css",
+    styleSheet: "./Themes/futuristic.css",
     drawerBG: "",
     toolbarBG: "",
     fontRegular: "Orbitron-Regular",
