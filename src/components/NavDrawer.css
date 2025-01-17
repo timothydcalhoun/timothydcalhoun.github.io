@@ -11,7 +11,7 @@
 }
 
 .nav-drawer.open {
-    width: 150px;
+    width: 170px;
 }
 
 .nav-drawer svg:hover {
@@ -52,7 +52,7 @@
 }
 
 .menu-item-text {
-    width: 80px;
+    width: 100px;
     padding-left: 20px;
     overflow: hidden;
     text-align: start;
