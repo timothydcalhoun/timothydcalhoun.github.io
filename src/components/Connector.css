@@ -1,0 +1,19 @@
+.connector {
+    filter: blur(1px);
+}
+
+.line {
+    /* Length of the dashed segments - we have a super long dash */
+    /*stroke-dasharray: 1000;*/
+    /* Offset it by its exact length so it is barely "offscreen" */
+    /*stroke-dashoffset: 1000;*/
+    animation: dash 5s forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes dash {
+    to {
+        /* Slowly reduce offset to 0 so it moves into view */
+        stroke-dashoffset: 0;
+    }
+}

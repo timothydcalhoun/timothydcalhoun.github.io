@@ -1,0 +1,46 @@
+.star-box {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.star-box:hover {
+    cursor: pointer;
+}
+
+.star {
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star-glow {
+    background-color: #FFF;
+    border-radius: 50%;
+    box-shadow: 0 0 100px 5px white, 0 0 20px 5px white;
+}
+
+.star-box:hover > .star > .star-glow {
+    animation: Flicker 2s infinite ease-in-out;
+    box-shadow: 0 0 0 0 white;
+}
+
+@keyframes Flicker {
+    0% {
+        box-shadow: 0 0 10px 5px white, 0 0 20px 5px white;
+    }
+    50% {
+        box-shadow: 0 0 5px 2px white, 0 0 5px 1px white;
+    }
+    100% {
+        box-shadow: 0 0 10px 5px white, 0 0 20px 5px white;
+    }
+}
