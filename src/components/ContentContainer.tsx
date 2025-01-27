@@ -1,45 +1,56 @@
 import "./ContentContainer.css"
 import Star from "./Star.tsx";
 import Connector from "./Connector.tsx";
-import useMediaSize, {WindowSize} from "../../hooks/useMediaSize.tsx";
+import useMediaSize from "../../hooks/useMediaSize.tsx";
 
-interface Coordinate {
+export interface Coordinate {
     x: number
     y: number
 }
 
-function getCoordinates(windowSize: WindowSize): Coordinate[] {
-    switch (windowSize) {
-        case "xs":
-            return []
-        case "small":
-            return []
-        case "medium":
-            return []
-        case "large":
-            return []
-        case "extra-large":
-            return [
-                {x: 200, y: 200},
-                {x: 650, y: 100},
-                {x: 350, y: 600},
-                {x: 1150, y: 100},
-                {x: 900, y: 70},
-                {x: 800, y: 400},
-                {x: 875, y: 700},
-                {x: 1125, y: 600}
-            ]
-    }
-}
+const StarText: string[] = [
+    "Star 1",
+    "Star 2 text",
+    "Star 3 info",
+    "Star 4 info",
+    "Star 5 info",
+    "Star 6 info",
+    "Star 7 info",
+    "Star 8 info",
+]
+
+const TeeRatios: Coordinate[] = [
+    {x: .1, y: .25},
+    {x: .4, y: .2},
+    {x: .2, y: .7}
+]
+
+const CeeRatios: Coordinate[] = [
+    {x: .8, y: .2},
+    {x: .60, y: .25},
+    {x: .53, y: .5},
+    {x: .6, y: .7},
+    {x: .8, y: .65},
+]
 
 const ContentContainer = () => {
 
-    const windowSize = useMediaSize();
-    const coordinates = getCoordinates(windowSize);
+    const mediaSize = useMediaSize();
+    const coordinates: Coordinate[] = [
+        ...TeeRatios,
+        ...CeeRatios,
+    ].map((coord) => {
+        return {x: coord.x * mediaSize.width, y: coord.y * mediaSize.height };
+    })
 
-    const Stars = coordinates.map(coords => {
+    const Stars = coordinates.map((coords, i) => {
         return(
-            <Star top={coords.y} left={coords.x} size={Math.random() * 3 + 3} text={""}/>
+            <Star
+                top={coords.y}
+                left={coords.x}
+                size={Math.random() * 3 + 3}
+                text={StarText[i]}
+            />
         )
     })
     const Tee = () => {
@@ -73,30 +84,32 @@ const ContentContainer = () => {
         )
     }
 
-    console.log(coordinates.slice(3, 8))
     const ceeMap = coordinates.slice(3, 8)
 
-    const C = ceeMap.map((coord, index) => {
-        if (index != 0) {
-            return (
-                <Connector
-                    x1={ceeMap[index - 1].x}
-                    y1={ceeMap[index - 1].y}
-                    x2={coord.x}
-                    y2={coord.y}
-                />
-            )
-        }
-        else {
-            return <></>
-        }
-    })
+    const C = () => {
+        return ceeMap.map((coord, index) => {
+            if (index != 0) {
+                return (
+                    <Connector
+                        x1={ceeMap[index - 1].x}
+                        y1={ceeMap[index - 1].y}
+                        x2={coord.x}
+                        y2={coord.y}
+                    />
+                )
+            } else {
+                return <></>
+            }
+        })
+    }
 
     return (
         <div id={"content"} className={"content"}>
+            <div className={"veil"}/>
+            <p className={"web-dev"}>Full Stack Web Developer</p>
             {Stars}
             <Tee/>
-            {C}
+            <C/>
         </div>
     )
 

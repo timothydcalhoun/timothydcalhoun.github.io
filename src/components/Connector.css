@@ -7,7 +7,7 @@
     /*stroke-dasharray: 1000;*/
     /* Offset it by its exact length so it is barely "offscreen" */
     /*stroke-dashoffset: 1000;*/
-    animation: dash 5s forwards;
+    animation: dash 5s forwards, FadeStroke 5s 5s forwards;
     animation-iteration-count: 1;
 }
 
@@ -15,5 +15,11 @@
     to {
         /* Slowly reduce offset to 0 so it moves into view */
         stroke-dashoffset: 0;
+    }
+}
+
+@keyframes FadeStroke {
+    to {
+        stroke-width: 0.5;
     }
 }

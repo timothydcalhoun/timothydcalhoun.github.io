@@ -8,3 +8,21 @@
     margin-left: 50px;
     position: relative;
 }
+
+.veil {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: AnimateVeil 5s 5s forwards;
+}
+
+.web-dev {
+    align-self: flex-end;
+}
+
+@keyframes AnimateVeil {
+    100% {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}

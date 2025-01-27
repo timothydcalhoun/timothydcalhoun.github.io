@@ -1,7 +1,7 @@
 import "./TitleBar.css"
 import {ArticleOutlined, EmailOutlined} from "@mui/icons-material";
 import {Tooltip} from "@mui/material";
-import useMediaSize from "../../hooks/useMediaSize.tsx";
+import useWindowSize from "../../hooks/useWindowSize.tsx";
 import Resume from "../assets/Tim Calhoun Resume.pdf"
 
 const TitleBar = () => {
@@ -15,7 +15,7 @@ const TitleBar = () => {
     //     )
     // }
 
-    const windowSize = useMediaSize();
+    const windowSize = useWindowSize();
     
     return (
         <div className={"title-bar"}>

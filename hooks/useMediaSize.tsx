@@ -1,29 +1,24 @@
 import {useEffect, useState} from "react";
 
-export type WindowSize = "xs" | "small" | "medium" | "large" | "extra-large"
-
-function getWindowSize(width: number): WindowSize {
-    if (width < 400) {
-        return "xs"
-    } else if (width < 600) {
-        return "small"
-    } else if (width < 900) {
-        return "medium"
-    } else if (width < 1200) {
-        return "large"
-    } else {
-        return "extra-large"
-    }
+interface MediaSize {
+    width: number;
+    height: number;
 }
-
 
 const useMediaSize = () => {
 
-    const [size, setSize] = useState<WindowSize>(getWindowSize(window.innerWidth))
+    const [size, setSize] = useState<MediaSize>({
+        width: window.outerWidth,
+        height: window.innerHeight,
+    })
 
     useEffect(() => {
         const handleResize = () => {
-            setSize(getWindowSize(window.innerWidth))
+            console.log(window.innerWidth, window.innerHeight)
+            setSize({
+                width: window.innerWidth,
+                height: window.innerHeight,
+            })
         };
         window.addEventListener("resize", handleResize)
         return () => {
