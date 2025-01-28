@@ -32,7 +32,7 @@ const Connector = (props: ConnectorProps) => {
 
     return (
         <svg xmlns="http://www.w3.org/2000/svg"
-             // className="connector"
+             className="connector"
              width={width}
              height={height}
              style={{
@@ -41,16 +41,6 @@ const Connector = (props: ConnectorProps) => {
                  left: left + 10,
              }}
         >
-            {/*<path*/}
-            {/*    className="line connector"*/}
-            {/*    d={`m ${start[0]} ${start[1]} L ${end[0]} ${end[1]}`}*/}
-            {/*    stroke="#FFF"*/}
-            {/*    strokeWidth="2px"*/}
-            {/*    style={{*/}
-            {/*        strokeDasharray: lineLength,*/}
-            {/*        strokeDashoffset: lineLength*/}
-            {/*    }}*/}
-            {/*/>*/}
             <path
                 className="line"
                 d={`m ${start[0]} ${start[1]} L ${end[0]} ${end[1]}`}

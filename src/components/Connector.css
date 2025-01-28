@@ -1,7 +1,3 @@
-.connector {
-    filter: blur(1px);
-}
-
 .line {
     /* Length of the dashed segments - we have a super long dash */
     /*stroke-dasharray: 1000;*/

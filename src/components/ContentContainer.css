@@ -2,11 +2,31 @@
     height: calc(100vh - var(--titleHeight));
     padding: 0 24px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: whitesmoke;
     margin-left: 50px;
     position: relative;
+}
+
+.interact {
+    color: white;
+    align-self: center;
+    margin-top: 60px;
+    flex-grow: 1;
+    opacity: 0;
+    animation: LearnMore 8s 5s forwards;
+    text-shadow: 0 0 3px orange, 0 0 5px orange, 0 0 8px orange;
+}
+
+@keyframes LearnMore {
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 .veil {
@@ -18,7 +38,8 @@
 }
 
 .web-dev {
-    align-self: flex-end;
+    color: black;
+    text-shadow: 0 0 3px orange, 0 0 5px orange, 0 0 8px orange, 0 0 2px white;
 }
 
 @keyframes AnimateVeil {

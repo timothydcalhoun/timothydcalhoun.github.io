@@ -1,5 +1,7 @@
 import "./Star.css"
 import React, {useState} from "react";
+import StarText from "./StarText.tsx";
+import {Coordinate} from "./ContentContainer.tsx";
 
 interface StarProps {
     top: number
@@ -11,37 +13,45 @@ interface StarProps {
 const Star: React.FC<StarProps> = (props: StarProps) => {
 
     const [showStar, setShowStar] = useState(false)
-    const show = showStar ? "show" : "hide"
+    const [coords, setCoords] = useState<Coordinate>({x:0,y:0})
+
+    const onClose = () => {
+        console.log("onClose")
+        setShowStar(false)
+        setCoords({x:0,y:0})
+    }
 
     return (
-        <div
-            className={"star-box"}
-            style={{
-                top: `${props.top}px`,
-                left: `${props.left}px`
-            }}
-            onClick={() => setShowStar(!showStar)}
-        >
-            <div className={"star"}
-                 style={{
-                     height: `${props.size}px`,
-                     width: `${props.size}px`,
-                 }}
+        <>
+            <div
+                className={"star-box"}
+                style={{
+                    top: `${props.top}px`,
+                    left: `${props.left}px`
+                }}
+                onClick={(event) => {
+                    setShowStar(!showStar)
+                    setCoords({x: event.clientX, y: event.clientY})
+                }}
             >
-                <div
-                    className={"star-glow"}
-                    style={{
-                        height: `${props.size}px`,
-                        width: `${props.size}px`,
-                    }}
-                ></div>
+                <div className={"star"}
+                     style={{
+                         height: `${props.size}px`,
+                         width: `${props.size}px`,
+                     }}
+                >
+                    <div
+                        className={"star-glow"}
+                        style={{
+                            height: `${props.size}px`,
+                            width: `${props.size}px`,
+                        }}
+                    ></div>
+                </div>
             </div>
-            <div className={`star-text-container ${show}`}>
-                <span className={"star-text"}>
-                    {props.text}
-                </span>
-            </div>
-        </div>
+            <StarText text={props.text} visible={showStar} location={coords} onClose={onClose} />
+        </>
+
     )
 }
 
