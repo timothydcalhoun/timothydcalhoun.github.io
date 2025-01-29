@@ -11,15 +11,14 @@ export interface Coordinate {
 const StarText: string[] = [
     "At CIG I cross-functionally directed and implemented a web application for \n" +
     "navigating internal project structures, all the way from inception to delivery.",
-    "I authored over 100 improvements to our internal web \n" +
+    "I authored over 100 improvements to CIG's internal web \n" +
     "application and created custom libraries to meet the needs of the team, \n" +
     "providing consequential time and cost savings.",
     "I discovered my interest in web development while in another career \n" +
     "and endeavored to pursue it despite significant personal risk and \n" +
     "expense.",
     "My time spent in other fields has provided me with a unique \n" +
-    "combination of experience and soft skills that other programmers \n" +
-    "likely do not possess. ",
+    "combination of experience and soft skills. ",
     "I excel at communicating and refining goals, standards, and \n" +
     "objectives.  These skills have been developed through conducting \n" +
     "training courses, working with clients and developers, and writing \n" +
@@ -30,15 +29,13 @@ const StarText: string[] = [
     "If a project or task lacks leadership, I grab the reins.  Not out of \n" +
     "desire, but out of necessity.  I do what needs to be done to achieve \n" +
     "the goal.",
-    "I’m a straight shooter that tells it like it is.  I’m not interested in living \n" +
-    "in an echo chamber.  If the status quo needs to be challenged, I \n" +
+    "I’m a straight shooter that tells it like it is.  If the status quo needs to be challenged, I \n" +
     "challenge it. But I do so purely out of a desire to get things right, and \n" +
     "I do it with respect and curiosity, not with defiance. ",
-    "Written letters from former supervisors validate the above \n" +
-    "statements and highlight my work ethic and dedication to my \n" +
-    "organization.",
-    "I’m not just looking for another job, I’m looking for a career through which I \n" +
-    "can grow, develop, and become a vital cog in a well-oiled machine."
+    "Written letters from former supervisors highlight my work ethic " +
+    "and dedication to my organization.",
+    "I’m looking for a long-term opportunity with an organization through which I \n" +
+    "can grow, develop, and become a critical, high-impact team member."
 ]
 
 const TeeRatios: Coordinate[] = [
@@ -131,9 +128,9 @@ const ContentContainer = () => {
 
     return (
         <div id={"content"} className={"content"}>
-            <p className={"interact"}>Interact with the bright stars to learn more about me!</p>
-            <div className={"veil"}/>
+            <p className={"interact"}>Interact with the glowing stars to learn more about me!</p>
             <p className={"web-dev"}>(Not Just Another) Full Stack Web Developer</p>
+            <div className={"veil"}/>
             <Tee/>
             <C/>
             {Stars}
